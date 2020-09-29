@@ -40,7 +40,7 @@ class TodoList extends React.Component<TodoListProps, TodoListState> {
             <ul>
               {this.props.todoList.map((item: string, index: number) => {
                 return (
-                  <li>
+                  <li key={index}>
                     {index} - {item}
                   </li>
                 );

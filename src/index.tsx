@@ -5,11 +5,17 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { todoStore } from './redux/store';
+import AppLazy from './AppLazy';
+import AppRouting from './AppRouting';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={todoStore}>
-      <App />
+      <>
+        <App />
+        <AppLazy />
+        <AppRouting />
+      </>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

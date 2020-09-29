@@ -1,15 +1,14 @@
 import React from 'react';
 
 export interface ToggleProps {
-  title: string;
-  render: (title: string) => {};
+  children: () => JSX.Element;
 }
 
 interface ToggleState {
   visible: boolean;
 }
 
-export default class Toggle extends React.Component<ToggleProps, ToggleState> {
+export default class ToggleChildren extends React.Component<ToggleProps, ToggleState> {
   state = { visible: true };
 
   toggle = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -18,11 +17,12 @@ export default class Toggle extends React.Component<ToggleProps, ToggleState> {
   };
 
   public render() {
-    const { render, title } = this.props;
+    const { children } = this.props;
     const { visible } = this.state;
     return (
       <div>
-        {visible && render(title)}
+        <h1>Toggle with children</h1>
+        {visible && children()}
         <button onClick={this.toggle}>Toggle</button>
       </div>
     );

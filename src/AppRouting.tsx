@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import ErrorBoundary from './components/ErrorBoundary';
 
 const ComponentA = React.lazy(() => import('./components/ComponentA'));
@@ -15,6 +15,8 @@ export default function AppRouting() {
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <BrowserRouter>
+              <Link to="/">Home</Link>
+              <Link to="/compb">ComponentB</Link>
               <Switch>
                 <Route exact path="/" component={ComponentA} />
                 <Route path="/compb" component={ComponentB} />

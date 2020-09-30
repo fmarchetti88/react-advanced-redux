@@ -12,6 +12,7 @@ import AppCtx from './AppCtx';
 import AppI18N from './AppI18N';
 import AppPortal from './AppPortal';
 import AppRefs from './AppRefs';
+import AppMemo from './AppMemo';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -25,6 +26,7 @@ ReactDOM.render(
         <AppI18N />
         <AppPortal />
         <AppRefs />
+        <AppMemo />
       </>
     </Provider>
   </React.StrictMode>,

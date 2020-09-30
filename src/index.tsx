@@ -8,6 +8,7 @@ import { todoStore } from './redux/store';
 import AppLazy from './AppLazy';
 import AppRouting from './AppRouting';
 import AppHOC from './AppHOC';
+import AppCtx from './AppCtx';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
         <AppLazy />
         <AppRouting />
         <AppHOC />
+        <AppCtx />
       </>
     </Provider>
   </React.StrictMode>,

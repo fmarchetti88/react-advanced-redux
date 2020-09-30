@@ -67,3 +67,14 @@
     transform: rotate(360deg);
   }
 }
+
+.notification-window {
+  top: 5px;
+  right: 5px;
+  position: fixed;
+  z-index: 1500;
+  background-color: darkgreen;
+  color: antiquewhite;
+  width: 200px;
+  height: 100px;
+}

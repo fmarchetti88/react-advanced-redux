@@ -10,6 +10,7 @@ import AppRouting from './AppRouting';
 import AppHOC from './AppHOC';
 import AppCtx from './AppCtx';
 import AppI18N from './AppI18N';
+import AppPortal from './AppPortal';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.render(
         <AppHOC />
         <AppCtx />
         <AppI18N />
+        <AppPortal />
       </>
     </Provider>
   </React.StrictMode>,

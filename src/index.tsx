@@ -9,6 +9,7 @@ import AppLazy from './AppLazy';
 import AppRouting from './AppRouting';
 import AppHOC from './AppHOC';
 import AppCtx from './AppCtx';
+import AppI18N from './AppI18N';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.render(
         <AppRouting />
         <AppHOC />
         <AppCtx />
+        <AppI18N />
       </>
     </Provider>
   </React.StrictMode>,

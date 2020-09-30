@@ -15,11 +15,11 @@ class AppI18N extends React.Component<any, any> {
         <header className="App-header">
           <div>
             <span>
-              <a href="#" onClick={() => this.changeLanguage('it')}>
+              <a href="/#" onClick={() => this.changeLanguage('it')}>
                 ITA
               </a>
               &nbsp;|&nbsp;
-              <a href="#" onClick={() => this.changeLanguage('en')}>
+              <a href="/#" onClick={() => this.changeLanguage('en')}>
                 ING
               </a>
             </span>

@@ -11,7 +11,11 @@ Esempio di applicazione con Redux, ErrorBoundary, RenderProps, LazyLoading, Reac
 - **useReducer** (*additional*): viene utilizzato per gestire logiche di stato complesse in alternativa a *useState*. Funziona in modo simile a *Redux*.
 - **useMemo** (*additional*): viene utilizzato per sfruttare la tecnica di *memoization* su un calcolo complesso.
 - **useCallback** (*additional*): viene utilizzato per ottimizzare il passaggio di funzioni di callback come *props* a componenti figli, utilizzando la *memoization*.
-> const callback = useCallback(fn, [a, b]) ...equivale a... const callback = useMemo(() => fn, [a, b])
+ ```js
+    const callback = useCallback(fn, [a, b])
+    // ...equivale a...
+    const callback = useMemo(() => fn, [a, b])
+```
 - **useLayoutEffect** (*additional*): è identico allo *useEffect*, ma si attiva (in modo sincrono) solo dopo aver applicato mutazioni al DOM (non al Virtual DOM!).
 - **useDebugValue** (*additional*): viene utilizzato per visualizzare un'etichetta nei *React DevTools* quando si sviluppano hook custom.
 
